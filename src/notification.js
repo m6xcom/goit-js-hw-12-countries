@@ -13,4 +13,13 @@ function specificError() {
     delay: 3000,
   });
 }
-export default { specificError };
+
+function noMatchesError() {
+  error({
+    text: 'No matches found! ',
+    closer: false,
+    sticker: false,
+    delay: 3000,
+  });
+}
+export default { specificError, noMatchesError };

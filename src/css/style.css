@@ -1,33 +1,47 @@
 body {
-  background-color: grey;
+  background-color: #444444;
+  color: white;
+}
+#name {
+  width: 20%;
+  font-size: 30px;
+  margin-left: 40%;
+}
+.countries-list {
+  margin-left: 30%;
+}
+.countries-list > li {
+  margin-top: 10px;
+  font-size: 25px;
 }
 .country-div {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
 }
 .country-div > h2 {
   text-align: center;
 }
-.country-div > img {
-  width: 50%;
-  position: absolute;
-  height: auto;
-  margin-left: 42%;
+.wrapper {
+  display: flex;
+  justify-content: space-around;
 }
-.country-div > span {
+.wrapper > img {
+  width: 50%;
+  height: auto;
+}
+.info > span {
   display: flex;
   margin-top: 20px;
   font-weight: bold;
   font-size: 24px;
 }
-.country-div > span > p {
+.info > span > p {
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: normal;
 }
-.country-div > .languages-header {
+.info > .languages-header {
   display: block;
 }
 .languages-header > ul {
