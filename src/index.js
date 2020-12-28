@@ -3,7 +3,7 @@ import errorNotification from './notification';
 import fetchCountries from './fetchCountries';
 import countriesList from './templates/countries-list.hbs';
 import countryMarkup from './templates/country-div.hbs';
-var debounce = require('lodash.debounce');
+import debounce from 'lodash.debounce';
 
 const input = document.getElementById('name');
 const list = document.querySelector('.countries-list');
@@ -20,7 +20,6 @@ input.addEventListener(
     removeElems();
     let countryToFind = input.value;
     if (countryToFind.length === 0) {
-      removeElems();
       return;
     }
     fetchCountries(countryToFind).then(array => {
